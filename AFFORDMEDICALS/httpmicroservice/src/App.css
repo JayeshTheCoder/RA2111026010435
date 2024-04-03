@@ -1,0 +1,168 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin-bottom: 20px;
+}
+
+.bt1, .bt2, .bt3, .bt4 {
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bt1 {
+  margin-top: 50px;
+  margin-left: 750px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.bt2 {
+  margin-top: 40px;
+  margin-left: 748px;
+  background-color: #28a745;
+  color: #fff;
+}
+
+.bt3 {
+  margin-top: 40px;
+  margin-left: 736px;
+  background-color: #ffc107;
+  color: #333;
+}
+
+.bt4 {
+  margin-top: 40px;
+  margin-left: 740px;
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.bt1:hover, .bt2:hover, .bt3:hover, .bt4:hover {
+  opacity: 0.8;
+}
+
+.response-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.response {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  flex: 1 1 200px;
+}
+
+.response h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.response-content {
+  font-size: 16px;
+}
+
+.response-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.response-content ul li {
+  margin-bottom: 5px;
+}
+
+.error {
+  color: #dc3545;
+}
+
+/* Background Color Effect */
+@keyframes colorChange {
+  0% {
+    background-color: #ff6347;
+  }
+  25% {
+    background-color: #ff69b4;
+  }
+  50% {
+    background-color: #00ffff;
+  }
+  75% {
+    background-color: #ffff00;
+  }
+  100% {
+    background-color: #ff4500;
+  }
+}
+
+.container {
+  animation: colorChange 10s infinite alternate;
+}
+
+/* Additional Styles for Colorful Background */
+body {
+  background-color: #f0f0f0;
+  background-image: linear-gradient(45deg, #ff6347, #ff69b4, #00ffff, #ffff00, #ff4500);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Styling for Boxes */
+.box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.box h2 {
+  color: #333;
+}
